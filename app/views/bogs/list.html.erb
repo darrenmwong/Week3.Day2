@@ -1,0 +1,11 @@
+		<div>
+			<% @creature.each do |creature| %>
+		Name: <%= creature[:name] %> <br>
+		Description: <%= creature[:description] %> <br>
+		<a href='<%=creature[:id]%>'>View</a><br>
+		<a href='<%=creature[:id]%>/edit'>Edit<br>
+		<a href='<%=creature[:id]%>/prompt'>Delete</a><br><br><br>
+
+		<% end %>
+		</div>
+		<a href="/">Main Page</a>

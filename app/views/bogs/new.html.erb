@@ -1,0 +1,8 @@
+<form action= "/bogs" method= "post" >
+	<input type= "text" name="creature[name]"><br>
+	<textarea name="creature[description]"></textarea><br>
+	<%= token_tag form_authenticity_token %>
+
+	<button>CREATE A BOG!</button>
+</form>
+<a href="/">Main Page</a>
